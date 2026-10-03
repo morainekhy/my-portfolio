@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Khy - Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <style>
+      @layer base {
+
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          overscroll-behavior: none;
+        }
+
+        main>:first-child {
+          margin-top: 0 !important;
+        }
+
+        main>:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#e3e2e8",
+              "inverse-primary": "#006780",
+              "surface-container": "#1f1f24",
+              "on-surface": "#e3e2e8",
+              "on-surface-variant": "#bcc8ce",
+              "surface-container-low": "#1a1b20",
+              "surface-bright": "#38393e",
+              "on-tertiary": "#4b007d",
+              "on-error-container": "#ffdad6",
+              "primary": "#93e2ff",
+              "on-secondary-container": "#fffbff",
+              "primary-fixed-dim": "#5bd5fc",
+              "secondary": "#ffb1c6",
+              "on-error": "#690005",
+              "on-tertiary-container": "#7105b6",
+              "on-secondary": "#650031",
+              "on-primary": "#003543",
+              "on-background": "#e3e2e8",
+              "on-tertiary-fixed-variant": "#6b00af",
+              "tertiary": "#eacbff",
+              "surface-container-highest": "#343439",
+              "surface": "#121317",
+              "surface-container-lowest": "#0d0e12",
+              "on-tertiary-fixed": "#2e004e",
+              "tertiary-container": "#d9a7ff",
+              "outline": "#879398",
+              "outline-variant": "#3d484d",
+              "secondary-fixed": "#ffd9e1",
+              "surface-container-high": "#292a2e",
+              "error": "#ffb4ab",
+              "on-primary-container": "#005266",
+              "surface-tint": "#5bd5fc",
+              "primary-fixed": "#b7eaff",
+              "secondary-fixed-dim": "#ffb1c6",
+              "error-container": "#93000a",
+              "secondary-container": "#e20476",
+              "on-secondary-fixed": "#3f001c",
+              "tertiary-fixed-dim": "#e0b6ff",
+              "primary-container": "#4cc9f0",
+              "on-primary-fixed-variant": "#004e61",
+              "tertiary-fixed": "#f2daff",
+              "surface-variant": "#343439",
+              "background": "#121317",
+              "surface-dim": "#121317",
+              "inverse-on-surface": "#2f3035",
+              "on-secondary-fixed-variant": "#8e0048",
+              "on-primary-fixed": "#001f28"
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px"
+            },
+            spacing: {
+              "space-sm": "0.5rem",
+              gutter: "1.5rem",
+              margin: "2rem",
+              "space-xl": "2.5rem",
+              "margin-sm": "1rem",
+              "margin-lg": "4rem",
+              "space-xs": "0.25rem",
+              "gutter-sm": "1rem",
+              "gutter-lg": "2rem",
+              "space-md": "1rem",
+              "space-lg": "1.5rem"
+            },
+            fontFamily: {
+              "label-code": ["JetBrains Mono"],
+              "headline-lg-mobile": ["Inter"],
+              "headline-md": ["Inter"],
+              "body-sm": ["Inter"],
+              "body-md": ["Inter"],
+              "headline-lg": ["Inter"],
+              "label-meta": ["Inter"],
+              "display-hero": ["Inter"],
+              "headline-sm": ["Inter"],
+              "body-lg": ["Inter"],
+              "display-hero-mobile": ["Inter"]
+            },
+            fontSize: {
+              "label-code": ["0.875rem", {
+                lineHeight: "1.25rem",
+                letterSpacing: "-0.01em",
+                fontWeight: "500"
+              }],
+              "headline-lg-mobile": ["1.75rem", {
+                lineHeight: "2.25rem",
+                letterSpacing: "-0.02em",
+                fontWeight: "700"
+              }],
+              "headline-md": ["1.75rem", {
+                lineHeight: "2.25rem",
+                letterSpacing: "-0.02em",
+                fontWeight: "600"
+              }],
+              "body-sm": ["0.875rem", {
+                lineHeight: "1.25rem",
+                fontWeight: "400"
+              }],
+              "body-md": ["1rem", {
+                lineHeight: "1.5rem",
+                fontWeight: "400"
+              }],
+              "headline-lg": ["2.5rem", {
+                lineHeight: "3rem",
+                letterSpacing: "-0.03em",
+                fontWeight: "700"
+              }],
+              "label-meta": ["0.75rem", {
+                lineHeight: "1rem",
+                letterSpacing: "0.06em",
+                fontWeight: "600"
+              }],
+              "display-hero": ["4.5rem", {
+                lineHeight: "5rem",
+                letterSpacing: "-0.04em",
+                fontWeight: "800"
+              }],
+              "headline-sm": ["1.25rem", {
+                lineHeight: "1.75rem",
+                letterSpacing: "-0.01em",
+                fontWeight: "600"
+              }],
+              "body-lg": ["1.125rem", {
+                lineHeight: "1.75rem",
+                fontWeight: "400"
+              }],
+              "display-hero-mobile": ["2.75rem", {
+                lineHeight: "3.25rem",
+                letterSpacing: "-0.03em",
+                fontWeight: "800"
+              }]
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-surface text-on-surface relative min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+      <div class="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-[#3a0ca3] opacity-25 blur-[120px]"></div>
+      <div class="absolute top-1/4 -right-20 w-80 h-80 rounded-full bg-[#7209b7] opacity-20 blur-[120px]"></div>
+      <div class="absolute top-2/3 left-1/3 w-96 h-96 rounded-full bg-[#4361ee] opacity-15 blur-[120px]"></div>
+      <div class="absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-[#f72585] opacity-20 blur-[120px]"></div>
+      <div class="absolute bottom-1/3 -left-20 w-72 h-72 rounded-full bg-[#4cc9f0] opacity-15 blur-[120px]"></div>
+    </div>
+    <header class="fixed top-0 left-0 right-0 z-50 pt-space-md px-margin-sm lg:px-margin-lg">
+      <div class="h-16 max-w-7xl mx-auto px-gutter bg-surface-container/60 backdrop-blur-xl rounded-full border border-white/10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.6)] flex items-center justify-between">
+        <a class="flex items-center gap-space-xs font-label-code text-label-code text-on-surface hover:text-primary transition-colors tracking-tight" href="#hero">
+          <span class="text-primary font-bold">&lt;/&gt;</span>
+          <!-- EDIT: NAVBAR_BRAND --> FCBPortfolio </a>
+        <nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm text-body-sm rounded-full">
+          <a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-headline-sm text-body-sm rounded-full" data-path="portfolio-home" href="#hero">Home</a>
+          <a class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="about-section" href="#about">About</a>
+          <a class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="projects-section" href="#projects">Projects</a>
+          <a class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="skills-section" href="#skills">Skills</a>
+          <a class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="contact-section" href="#contact">Contact</a>
+        </nav>
+        <div class="flex items-center gap-space-sm">
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="relative z-10 w-full pt-16 max-w-7xl mx-auto px-gutter-sm lg:px-gutter-lg">
+      <div class="flex flex-col w-full">
+        <!-- HERO SECTION -->
+        <section class="relative min-h-[85vh] flex items-center justify-center py-space-xl overflow-hidden" id="hero">
+          <div class="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-gutter-lg">
+            <div class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm mb-space-lg">
+                <span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">terminal</span>
+                <span class="font-label-code text-label-code text-primary tracking-wide">Software Developer</span>
+              </div>
+              <!-- EDIT: HERO_NAME -->
+              <h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-surface tracking-tight leading-none mb-space-sm"> Maria Kyla A. Camelon </h1>
+              <!-- EDIT: HERO_TITLE -->
+              <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary-container font-semibold tracking-tight mb-space-md"> Software Developer </h2>
+              <!-- EDIT: HERO_INTRO -->
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-xl"> I love to design, build, test, and maintain computer applications and systems that solve real-world problems. </p>
+              <a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded-full bg-gradient-to-r from-[#7209b7] via-[#4361ee] to-[#4cc9f0] text-on-secondary-container font-headline-sm text-headline-sm shadow-xl shadow-[#4361ee]/20 hover:shadow-[#4cc9f0]/40 hover:scale-[1.02] active:scale-[0.98] transition-all" href="#projects">
+                <span>View Projects</span>
+                <span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+              </a>
+            </div>
+            <div class="flex-shrink-0 relative flex items-center justify-center p-space-md">
+              <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-[#f72585] via-[#7209b7] to-[#4cc9f0] opacity-30 blur-2xl animate-pulse"></div>
+              <div class="relative p-space-xs rounded-full bg-surface-container-high/60 backdrop-blur-xl shadow-2xl">
+                <!-- EDIT: PROFILE_IMAGE -->
+                <img alt="Profile image" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover backdrop-blur-md shadow-2xl" src="./profile.jpg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ABOUT SECTION -->
+        <section class="py-space-xl scroll-mt-24" id="about">
+          <div class="flex items-center gap-space-sm mb-space-lg">
+            <span class="font-label-code text-label-code text-primary tracking-wider uppercase">01 // Overview</span>
+            <div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-space-lg tracking-tight"> About </h2>
+          <div class="relative rounded-2xl bg-surface-container-low/70 backdrop-blur-xl p-8 lg:p-12 shadow-xl shadow-black/40 overflow-hidden">
+            <div class="absolute top-0 right-0 w-80 h-80 bg-[#7209b7]/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="relative z-10">
+              <!-- EDIT: ABOUT_TEXT -->
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed"> A Software Developer that creates and tests programs that allow people to accomplish tasks with computers. I often use imagination and logic to develop software that is user-friendly and meets an organisation's needs. I work in an office or hybrid working environment during regular business hours. Additional work may be handled after-hours or on weekends.
+ </p>
+            </div>
+          </div>
+        </section>
+        <!-- PROJECTS SECTION -->
+        <section class="py-space-xl scroll-mt-24" id="projects">
+          <div class="flex items-center gap-space-sm mb-space-lg">
+            <span class="font-label-code text-label-code text-primary tracking-wider uppercase">02 // Selected Works</span>
+            <div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-space-xl tracking-tight"> Projects </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- CARD 1 -->
+            <div class="flex flex-col rounded-2xl bg-surface-container-low/60 backdrop-blur-xl p-space-md shadow-xl shadow-black/30 hover:-translate-y-1 hover:bg-surface-container-high/60 transition-all duration-300">
+              <div class="overflow-hidden rounded-xl mb-space-md relative">
+                <!-- EDIT: PROJECT_1_IMAGE -->
+                <img alt="Project image" class="w-full h-48 object-cover rounded-xl shadow-sm" src="https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1709737530/catalog/1671137929386573824/jc8ulp3oysry6taiq8dr.webp"/>
+              </div>
+              <div class="flex flex-col flex-1">
+                <!-- EDIT: PROJECT_1_TITLE -->
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs"> Web Development </h3>
+                <!-- EDIT: PROJECT_1_DESCRIPTION -->
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-lg"> Building and maintaining a website, from the markup and code to hosting, content and ongoing updates. It covers front-end, back-end and full-stack work, and almost every project runs through the same four stages, planning, drafting, development and launch. </p>
+                <div class="pt-space-sm mt-auto">
+                  <!-- EDIT: PROJECT_1_LINK -->
+                  <a class="inline-flex items-center gap-space-xs font-label-code text-label-code text-primary hover:text-primary-container transition-colors" href="#">
+                    <span>Project Link</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="flex flex-col rounded-2xl bg-surface-container-low/60 backdrop-blur-xl p-space-md shadow-xl shadow-black/30 hover:-translate-y-1 hover:bg-surface-container-high/60 transition-all duration-300">
+              <div class="overflow-hidden rounded-xl mb-space-md relative">
+                <!-- EDIT: PROJECT_2_IMAGE -->
+                <img alt="Project image" class="w-full h-48 object-cover rounded-xl shadow-sm" src="https://sanako.com/wp-content/uploads/2022/03/Online-Learning-App-Female-Using-Smartphone-Application-For-Studying-Foreign-Languages-Cropped-min-1024x633.jpg" />
+              </div>
+              <div class="flex flex-col flex-1">
+                <!-- EDIT: PROJECT_2_TITLE -->
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs"> App Development </h3>
+                <!-- EDIT: PROJECT_2_DESCRIPTION -->
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-lg"> Native apps built specifically for one platform, like iOS or Android. They’re created using the platform’s preferred programming languages and tools, allowing them to take full advantage of built-in features. </p>
+                <div class="pt-space-sm mt-auto">
+                  <!-- EDIT: PROJECT_2_LINK -->
+                  <a class="inline-flex items-center gap-space-xs font-label-code text-label-code text-primary hover:text-primary-container transition-colors" href="#">
+                    <span>Project Link</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="flex flex-col rounded-2xl bg-surface-container-low/60 backdrop-blur-xl p-space-md shadow-xl shadow-black/30 hover:-translate-y-1 hover:bg-surface-container-high/60 transition-all duration-300">
+              <div class="overflow-hidden rounded-xl mb-space-md relative">
+                <!-- EDIT: PROJECT_3_IMAGE -->
+                <img alt="Project image" class="w-full h-48 object-cover rounded-xl shadow-sm" src="https://static0.pocketlintimages.com/wordpress/wp-content/uploads/wm/2024/06/android-games-1-1.jpg?w=1600&h=900&fit=crop" />
+              </div>
+              <div class="flex flex-col flex-1">
+                <!-- EDIT: PROJECT_3_TITLE -->
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs"> Game Development </h3>
+                <!-- EDIT: PROJECT_3_DESCRIPTION -->
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1 mb-space-lg"> Built an educational app that teaches how to make games using Unity and other courses like Java, Python, and Ethical Hacking. The app is for players who dream of creating their own game while doing something they love and making money in a growing industry.
+
+ </p>
+                <div class="pt-space-sm mt-auto">
+                  <!-- EDIT: PROJECT_3_LINK -->
+                  <a class="inline-flex items-center gap-space-xs font-label-code text-label-code text-primary hover:text-primary-container transition-colors" href="#">
+                    <span>Project Link</span>
+                    <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SKILLS & TOOLS SECTION -->
+        <section class="py-space-xl scroll-mt-24" id="skills">
+          <div class="flex items-center gap-space-sm mb-space-lg">
+            <span class="font-label-code text-label-code text-primary tracking-wider uppercase">03 // Competencies</span>
+            <div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-space-xl tracking-tight"> Skills &amp; Tools </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- CARD 1: SKILLS -->
+            <div class="rounded-2xl bg-surface-container-low/60 backdrop-blur-xl p-8 shadow-xl shadow-black/30">
+              <div class="flex items-center gap-space-sm mb-space-lg">
+                <div class="w-10 h-10 rounded-xl bg-[#4361ee]/20 flex items-center justify-center text-primary-container shadow-sm">
+                  <span class="material-symbols-outlined text-[22px]">code</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight"> Skills </h3>
+              </div>
+              <!-- EDIT: SKILLS_LIST -->
+              <ul class="font-body-md text-body-md text-on-surface-variant space-y-space-md">
+                <li class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container/40">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#4cc9f0]"></span>
+                  <span>Creativity</span>
+                </li>
+                <li class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container/40">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#4cc9f0]"></span>
+                  <span>Problem-solving</span>
+                </li>
+                <li class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container/40">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#4cc9f0]"></span>
+                  <span>Attention to Detail</span>
+                </li>
+              </ul>
+            </div>
+            <!-- CARD 2: TOOLS / TECHNOLOGIES -->
+            <div class="rounded-2xl bg-surface-container-low/60 backdrop-blur-xl p-8 shadow-xl shadow-black/30">
+              <div class="flex items-center gap-space-sm mb-space-lg">
+                <div class="w-10 h-10 rounded-xl bg-[#7209b7]/20 flex items-center justify-center text-secondary shadow-sm">
+                  <span class="material-symbols-outlined text-[22px]">build</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight"> Tools / Technologies </h3>
+              </div>
+              <!-- EDIT: TOOLS_LIST -->
+              <ul class="font-body-md text-body-md text-on-surface-variant space-y-space-md">
+                <li class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container/40">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#f72585]"></span>
+                  <span>Desktop Computer</span>
+                </li>
+                <li class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container/40">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#f72585]"></span>
+                  <span>Project management Software</span>
+                </li>
+                <li class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container/40">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#f72585]"></span>
+                  <span>Version Control System</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- CONTACT SECTION -->
+        <section class="py-space-xl scroll-mt-24" id="contact">
+          <div class="flex items-center gap-space-sm mb-space-lg">
+            <span class="font-label-code text-label-code text-primary tracking-wider uppercase">04 // Connect</span>
+            <div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-space-xl tracking-tight"> Contact </h2>
+          <div class="rounded-2xl bg-surface-container-low/70 backdrop-blur-xl p-8 lg:p-12 shadow-xl shadow-black/40">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <!-- EDIT: CONTACT_EMAIL -->
+              <div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container/40">
+                <div class="w-12 h-12 rounded-xl bg-[#4cc9f0]/10 flex items-center justify-center flex-shrink-0 text-primary">
+                  <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <rect height="16" rx="2" width="20" x="2" y="4"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <span class="font-body-md text-body-md text-on-surface font-medium truncate">kylacamelon@gmail.com</span>
+              </div>
+              <!-- EDIT: CONTACT_INFO -->
+              <div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container/40">
+                <div class="w-12 h-12 rounded-xl bg-[#7209b7]/10 flex items-center justify-center flex-shrink-0 text-secondary">
+                  <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <span class="font-body-md text-body-md text-on-surface font-medium truncate">09999423057</span>
+              </div>
+              <!-- EDIT: CONTACT_SOCIAL_LINK -->
+              <a class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container/40 hover:bg-surface-container-high/80 transition-colors group" href="https://www.facebook.com/profile.php?id=61591478322114">
+                <div class="w-12 h-12 rounded-xl bg-[#4361ee]/10 flex items-center justify-center flex-shrink-0 text-primary-container group-hover:scale-105 transition-transform">
+                  <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                  </svg>
+                </div>
+                <span class="font-body-md text-body-md text-on-surface font-medium group-hover:text-primary transition-colors truncate">Facebook Profile</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="relative z-10 w-full mt-margin-lg pb-margin-lg px-margin-sm lg:px-margin-lg">
+      <div class="max-w-7xl mx-auto px-gutter py-space-lg bg-surface-container-low/50 backdrop-blur-xl rounded-lg border border-white/10 flex flex-col md:flex-row items-center justify-between gap-space-md">
+        <span class="font-label-code text-label-code text-on-surface-variant flex items-center gap-space-xs">
+          <span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>Engineered for performance &amp; aesthetics </span>
+        <p class="font-label-meta text-label-meta text-on-surface-variant tracking-wider uppercase">© 2025 FCBPortfolio. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
